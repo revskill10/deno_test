@@ -14,7 +14,7 @@ jobs:
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "deno-test-app" #Must be unique in Heroku
-          buildpack: https://github.com/chibat/heroku-buildpack-deno.git
+          buildpack: "https://github.com/chibat/heroku-buildpack-deno.git"
           heroku_email: "checkraiser11@gmail.com"
           branch: "HEAD" #OPTIONAL and DEFAULT - 'HEAD' (a.k.a your current branch)
           dontuseforce: false #OPTIONAL and DEFAULT - false
