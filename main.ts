@@ -19,7 +19,7 @@ if (isNaN(port)) {
   console.error("Port is not a number.");
   Deno.exit(1);
 }
-algorithm.update("Hello world");
+algorithm.update("Hello world abc");
 const test = algorithm.hex();
 const body = new TextEncoder().encode(test);
 const s = serve({ port: port, hostname: '0.0.0.0'});
